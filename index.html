@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compound Interest Calculator NEW</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+    <h1>Compound Interest Calculator</h1>
+    <form>
+      <table>
+
+        <tr>
+          <td><label for="balance">Initial Balance: </label></td>
+          <td><input type="number" id="balance" name="balance" class="input-field" required placeholder="Enter Amount"></td>
+        </tr>
+
+        <tr>
+          <td><label for="rate">Interest Rate (%):</label></td>
+          <td><input type="number" id="rate" name="rate" class="input-field" required placeholder="Enter Percentage(%)"></td>
+        </tr>
+
+        <tr>
+          <td><label for="time">Number of Years:</label></td>
+          <td><input type="number" id="time" name="time" class="input-field" required placeholder="Enter Number"></td>
+        </tr>
+
+      </table>
+
+      <br>
+    
+      <div class="button-box"><button type="button" onclick="calculate()">Calculate</button></div>
+    </form>
+
+    <br>
+
+    <table id="theBigResult">
+      <tr>
+        <th>Year</th>
+        <th>Initial Balance</th>
+        <th>Profit</th>
+        <th>Final Balance</th>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
